@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - AldricWeb</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon active"></i>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Aldric<span>Web</span></a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Our <span class="highlight">Portfolio</span></h1>
+                <p>Showcasing our best work and successful projects</p>
+            </div>
+        </section>
+
+        <section class="portfolio-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                    <button class="filter-btn" data-filter="app">Web Applications</button>
+                    <button class="filter-btn" data-filter="corporate">Corporate Sites</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web corporate">
+                        <div class="project-preview">
+                            <iframe src="https://aldricweb.github.io/Honey-food/" title="Project Preview" loading="lazy"></iframe>
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#project1" class="btn btn-small btn-primary view-details">View Details</a>
+                                    <a href="https://aldricweb.github.io/Honey-food/" target="_blank" class="btn btn-small btn-secondary">Visit Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Honey Food</h3>
+                            <p>A responsive web design for a Honey delivery company that showcases their menu and delivery options.</p>
+                            <div class="project-tags">
+                                <span>Web Design</span>
+                                <span>Corporate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ecommerce">
+                        <div class="project-preview">
+                            <iframe src="https://aldricweb.github.io/Future-Gadget/" title="Project Preview" loading="lazy"></iframe>
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#project2" class="btn btn-small btn-primary view-details">View Details</a>
+                                    <a href="https://aldricweb.github.io/Future-Gadget/" target="_blank" class="btn btn-small btn-secondary">Visit Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Future Gadget</h3>
+                            <p>An e-commerce website for gadgets and accessories with user authentication and shopping cart functionality.</p>
+                            <div class="project-tags">
+                                <span>E-Commerce</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project-card" data-category="app">
+                        <div class="project-preview">
+                            <iframe src="https://example.com" title="Project Preview" loading="lazy"></iframe>
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#project3" class="btn btn-small btn-primary view-details">View Details</a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small btn-secondary">Visit Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>TaskMaster</h3>
+                            <p>A productivity web application for task management and team collaboration.</p>
+                            <div class="project-tags">
+                                <span>Web Application</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-preview">
+                            <iframe src="https://example.com" title="Project Preview" loading="lazy"></iframe>
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#project4" class="btn btn-small btn-primary view-details">View Details</a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small btn-secondary">Visit Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Green Earth Initiative</h3>
+                            <p>A website for an environmental non-profit organization with donation capabilities.</p>
+                            <div class="project-tags">
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="corporate">
+                        <div class="project-preview">
+                            <iframe src="https://example.com" title="Project Preview" loading="lazy"></iframe>
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#project5" class="btn btn-small btn-primary view-details">View Details</a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small btn-secondary">Visit Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Apex Consulting</h3>
+                            <p>A corporate website for a business consulting firm with service details and case studies.</p>
+                            <div class="project-tags">
+                                <span>Corporate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ecommerce app">
+                        <div class="project-preview">
+                            <iframe src="https://example.com" title="Project Preview" loading="lazy"></iframe>
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#project6" class="btn btn-small btn-primary view-details">View Details</a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small btn-secondary">Visit Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>FoodExpress</h3>
+                            <p>A food delivery platform with real-time order tracking and payment processing.</p>
+                            <div class="project-tags">
+                                <span>E-Commerce</span>
+                                <span>Web Application</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- Project Details Modals -->
+        <div id="project1" class="project-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Honey Food</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-preview">
+                        <iframe src="https://aldricweb.github.io/Honey-food/" title="Project Preview" loading="lazy"></iframe>
+                    </div>
+                    <div class="modal-details">
+                        <div class="detail-section">
+                            <h3>Project Overview</h3>
+                            <p>A responsive web design for a Honey delivery company that showcases their menu and delivery options.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3>Technologies Used</h3>
+                            <ul>
+                                <li>HTML5 & SCSS3</li>
+                                <li>JavaScript</li>
+
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Advanced property search with filters</li>
+                                <li>Interactive property maps</li>
+                                <li>Virtual property tours</li>
+                                <li>Property comparison tool</li>
+                                <li>Responsive design for all devices</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h3>Project Outcome</h3>
+                            <p>A fully functional and user-friendly website that showcases the company's products and services in an engaging and
+                            visually appealing manner. The website is optimized for search engines and mobile devices, providing a seamless user
+                            experience for both existing and potential customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://aldricweb.github.io/Honey-food/" target="_blank" class="btn btn-primary">Visit Website</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="project2" class="project-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Future Gadget</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-preview">
+                        <iframe src="https://aldricweb.github.io/Future-Gadget/" title="Project Preview" loading="lazy"></iframe>
+                    </div>
+                    <div class="modal-details">
+                        <div class="detail-section">
+                            <h3>Project Overview</h3>
+                            <p>A responsive web design for a future gadget company that showcases their products and services.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3>Technologies Used</h3>
+                            <ul>
+                                <li>HTML5 & CSS3</li>
+                                <li>JavaScript</li>
+
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Responsive design for all devices</li>
+                                <li>User authentication and profile management</li>
+                                <li>Shopping cart functionality</li>
+                                <li>Product search and filtering</li>
+                                <li>Secure payment processing</li>
+                                <li>Order tracking and history</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h3>Project Outcome</h3>
+                            <p>The website is fully functional and user-friendly, providing a seamless user experience for both existing and potential
+                            customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://aldricweb.github.io/Future-Gadget/" target="_blank" class="btn btn-primary">Visit Website</a>
+                </div>
+            </div>
+        </div>
+        <!-- Similar modals for other projects would be here -->
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Client <span class="highlight">Testimonials</span></h2>
+                    <p>What our clients say about working with us</p>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>AldricWeb transformed our outdated website into a modern, user-friendly platform that perfectly represents our brand. Their attention to detail and technical expertise exceeded our expectations.</p>
+                            <div class="client-info">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                                <div>
+                                    <h4>John Ryan</h4>
+                                    <p>CEO, Sunrise Realty</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>Working with AldricWeb was a pleasure from start to finish. They took the time to understand our business needs and delivered a website that has significantly increased our online sales.</p>
+                            <div class="client-info">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                                <div>
+                                    <h4>Sarah Emily</h4>
+                                    <p>Founder, Fashion Forward</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>The team at AldricWeb are true professionals. They not only built us a beautiful website but also provided valuable insights on how to improve our online presence. Highly recommended!</p>
+                            <div class="client-info">
+                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Client">
+                                <div>
+                                    <h4>Michael Richard</h4>
+                                    <p>Director, Apex Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="prev-testimonial" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-testimonial" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let's create something amazing together.</p>
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Aldric<span>Web</span></a>
+                    <p>Where Code Meets Innovation</p>
+                    <div class="tera">
+                        <img src="Main logo 2.png" alt="logo" srcset="">
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#frontend">Frontend Development</a></li>
+                        <li><a href="services.html#backend">Backend Development</a></li>
+                        <li><a href="services.html#fullstack">Full-Stack Development</a></li>
+                        <li><a href="services.html#seo">SEO Optimization</a></li>
+                        <li><a href="services.html#maintenance">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Ibadan, Nigeria</p>
+                    <p><i class="fas fa-envelope"></i> aldric3003mercenary@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +234 903 235 9849</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Abdulquadr40124" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abdulquadri-balogun-aa053230b/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/AldricWeb" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AldricWeb. All Rights Reserved.</p>
+                <p>Designed & Developed by <a href="#">Abdulquadri Balogun Adeyanju</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
